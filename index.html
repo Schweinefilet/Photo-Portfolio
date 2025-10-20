@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">MY PORTFOLIO</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Capturing Moments</h1>
+            <p>A collection of my photographic journey</p>
+            <a href="#gallery" class="cta-button">View Gallery</a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="portrait">Portrait</button>
+            <button class="filter-btn" data-filter="urban">Urban</button>
+            <button class="filter-btn" data-filter="abstract">Abstract</button>
+        </div>
+        <div class="gallery-grid">
+            <!-- Gallery items will be dynamically added here -->
+            <div class="gallery-item" data-category="nature">
+                <img src="https://via.placeholder.com/400x300/2c3e50/ecf0f1?text=Nature+1" alt="Nature Photo 1">
+                <div class="overlay">
+                    <h3>Nature Photography</h3>
+                    <p>Beautiful landscapes</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="portrait">
+                <img src="https://via.placeholder.com/400x300/34495e/ecf0f1?text=Portrait+1" alt="Portrait Photo 1">
+                <div class="overlay">
+                    <h3>Portrait Photography</h3>
+                    <p>Capturing emotions</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="urban">
+                <img src="https://via.placeholder.com/400x300/2c3e50/ecf0f1?text=Urban+1" alt="Urban Photo 1">
+                <div class="overlay">
+                    <h3>Urban Photography</h3>
+                    <p>City life moments</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="abstract">
+                <img src="https://via.placeholder.com/400x300/34495e/ecf0f1?text=Abstract+1" alt="Abstract Photo 1">
+                <div class="overlay">
+                    <h3>Abstract Photography</h3>
+                    <p>Creative perspectives</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://via.placeholder.com/400x300/2c3e50/ecf0f1?text=Nature+2" alt="Nature Photo 2">
+                <div class="overlay">
+                    <h3>Nature Photography</h3>
+                    <p>Wilderness beauty</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="portrait">
+                <img src="https://via.placeholder.com/400x300/34495e/ecf0f1?text=Portrait+2" alt="Portrait Photo 2">
+                <div class="overlay">
+                    <h3>Portrait Photography</h3>
+                    <p>Human expressions</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="urban">
+                <img src="https://via.placeholder.com/400x300/2c3e50/ecf0f1?text=Urban+2" alt="Urban Photo 2">
+                <div class="overlay">
+                    <h3>Urban Photography</h3>
+                    <p>Street scenes</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="abstract">
+                <img src="https://via.placeholder.com/400x300/34495e/ecf0f1?text=Abstract+2" alt="Abstract Photo 2">
+                <div class="overlay">
+                    <h3>Abstract Photography</h3>
+                    <p>Unique angles</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>I'm a passionate photographer dedicated to capturing the beauty of the world around us. Through my lens, I seek to tell stories and evoke emotions that resonate with viewers.</p>
+            <p>My journey in photography began several years ago, and since then, I've been exploring various styles and techniques to create compelling visual narratives.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+            <p>Interested in working together or have questions about my work?</p>
+            <div class="contact-info">
+                <a href="mailto:your.email@example.com" class="contact-btn">Email Me</a>
+                <div class="social-links">
+                    <a href="#" target="_blank" aria-label="Instagram">Instagram</a>
+                    <a href="#" target="_blank" aria-label="Twitter">Twitter</a>
+                    <a href="#" target="_blank" aria-label="Facebook">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Photography Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="lightbox-caption"></div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
