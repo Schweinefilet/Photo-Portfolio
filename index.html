@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photography Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,8 +16,6 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -25,11 +25,30 @@
         </nav>
     </header>
 
+    <!-- Left side caption + social (over hero) -->
+    <div class="side-panel" aria-hidden="false">
+        <div class="social-vertical">
+            <!-- LinkedIn SVG -->
+            <a href="https://www.linkedin.com/in/keith-duong-b32397308/" class="social-btn" aria-label="LinkedIn" target="_blank" rel="noopener">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8.75h5v14.25H0V8.75zM8.5 8.75h4.78v2h.07c.67-1.27 2.31-2.6 4.75-2.6 5.08 0 6 3.3 6 7.6V23h-5V15.4c0-1.84-.03-4.2-2.56-4.2-2.56 0-2.95 2-2.95 4.06V23H8.5V8.75z" fill="#fff"/>
+                </svg>
+            </a>
+            <!-- Instagram SVG -->
+            <a href="https://www.instagram.com/keith_____________/" class="social-btn" aria-label="Instagram" target="_blank" rel="noopener">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M12 2.2c3.2 0 3.584.012 4.85.07 1.17.056 1.98.24 2.44.4.6.22 1.03.48 1.48.92.45.45.7.88.92 1.48.16.46.344 1.27.4 2.44.058 1.27.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.056 1.17-.24 1.98-.4 2.44-.22.6-.48 1.03-.92 1.48-.45.45-.88.7-1.48.92-.46.16-1.27.344-2.44.4-1.27.058-1.65.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.056-1.98-.24-2.44-.4-.6-.22-1.03-.48-1.48-.92-.45-.45-.7-.88-.92-1.48-.16-.46-.344-1.27-.4-2.44C2.212 15.584 2.2 15.2 2.2 12s.012-3.584.07-4.85c.056-1.17.24-1.98.4-2.44.22-.6.48-1.03.92-1.48.45-.45.88-.7 1.48-.92.46-.16 1.27-.344 2.44-.4C8.416 2.212 8.8 2.2 12 2.2zm0 3c-3.1 0-3.466.012-4.68.068-1.01.046-1.56.22-1.92.366-.48.2-.82.44-1.18.8-.36.36-.6.7-.8 1.18-.146.36-.32.91-.366 1.92C2.212 8.534 2.2 8.9 2.2 12c0 3.1.012 3.466.068 4.68.046 1.01.22 1.56.366 1.92.2.48.44.82.8 1.18.36.36.7.6 1.18.8.36.146.91.32 1.92.366C8.534 21.788 8.9 21.8 12 21.8c3.1 0 3.466-.012 4.68-.068 1.01-.046 1.56-.22 1.92-.366.48-.2.82-.44 1.18-.8.36-.36.6-.7.8-1.18.146-.36.32-.91.366-1.92.056-1.214.068-1.58.068-4.68s-.012-3.466-.068-4.68c-.046-1.01-.22-1.56-.366-1.92-.2-.48-.44-.82-.8-1.18-.36-.36-.7-.6-1.18-.8-.36-.146-.91-.32-1.92-.366C15.466 5.212 15.1 5.2 12 5.2zM12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 1.8a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4zm4.9-2.9a1.05 1.05 0 1 1 0 2.1 1.05 1.05 0 0 1 0-2.1z" fill="#fff"/>
+                </svg>
+            </a>
+        </div>
+        <div class="vertical-caption">welcome to my portfolio idk</div>
+    </div>
+
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Capturing Moments</h1>
-            <p>A collection of my photographic journey</p>
+            <h1 class="hero-title">Keith Duong</h1>
+            <p class="hero-subtitle">PHOTOGRAPHY</p>
             <a href="#gallery" class="cta-button">View Gallery</a>
         </div>
     </section>
@@ -37,111 +56,37 @@
     <!-- Gallery Section -->
     <section id="gallery" class="gallery">
         <h2>Gallery</h2>
-        <div class="gallery-filter">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="nature">Nature</button>
-            <button class="filter-btn" data-filter="portrait">Portrait</button>
-            <button class="filter-btn" data-filter="urban">Urban</button>
-            <button class="filter-btn" data-filter="abstract">Abstract</button>
-        </div>
         <div class="gallery-grid">
-            <!-- Gallery items will be dynamically added here -->
-            <div class="gallery-item" data-category="nature">
-                <img src="https://via.placeholder.com/400x300/2c3e50/ecf0f1?text=Nature+1" alt="Nature Photo 1">
-                <div class="overlay">
-                    <h3>Nature Photography</h3>
-                    <p>Beautiful landscapes</p>
-                </div>
-            </div>
-            <div class="gallery-item" data-category="portrait">
-                <img src="https://via.placeholder.com/400x300/34495e/ecf0f1?text=Portrait+1" alt="Portrait Photo 1">
-                <div class="overlay">
-                    <h3>Portrait Photography</h3>
-                    <p>Capturing emotions</p>
-                </div>
-            </div>
-            <div class="gallery-item" data-category="urban">
-                <img src="https://via.placeholder.com/400x300/2c3e50/ecf0f1?text=Urban+1" alt="Urban Photo 1">
-                <div class="overlay">
-                    <h3>Urban Photography</h3>
-                    <p>City life moments</p>
-                </div>
-            </div>
-            <div class="gallery-item" data-category="abstract">
-                <img src="https://via.placeholder.com/400x300/34495e/ecf0f1?text=Abstract+1" alt="Abstract Photo 1">
-                <div class="overlay">
-                    <h3>Abstract Photography</h3>
-                    <p>Creative perspectives</p>
-                </div>
-            </div>
-            <div class="gallery-item" data-category="nature">
-                <img src="https://via.placeholder.com/400x300/2c3e50/ecf0f1?text=Nature+2" alt="Nature Photo 2">
-                <div class="overlay">
-                    <h3>Nature Photography</h3>
-                    <p>Wilderness beauty</p>
-                </div>
-            </div>
-            <div class="gallery-item" data-category="portrait">
-                <img src="https://via.placeholder.com/400x300/34495e/ecf0f1?text=Portrait+2" alt="Portrait Photo 2">
-                <div class="overlay">
-                    <h3>Portrait Photography</h3>
-                    <p>Human expressions</p>
-                </div>
-            </div>
-            <div class="gallery-item" data-category="urban">
-                <img src="https://via.placeholder.com/400x300/2c3e50/ecf0f1?text=Urban+2" alt="Urban Photo 2">
-                <div class="overlay">
-                    <h3>Urban Photography</h3>
-                    <p>Street scenes</p>
-                </div>
-            </div>
-            <div class="gallery-item" data-category="abstract">
-                <img src="https://via.placeholder.com/400x300/34495e/ecf0f1?text=Abstract+2" alt="Abstract Photo 2">
-                <div class="overlay">
-                    <h3>Abstract Photography</h3>
-                    <p>Unique angles</p>
-                </div>
-            </div>
+            <div class="gallery-item"><img src="images/Fog.jpeg" alt="Fog"></div>
+            <div class="gallery-item"><img src="images/Life.jpeg" alt="Life"></div>
+            <div class="gallery-item"><img src="images/hero.jpeg" alt="Hero"></div>
+            <div class="gallery-item"><img src="images/nature 2.jpeg" alt="Nature 2"></div>
+            <div class="gallery-item"><img src="images/nature.jpeg" alt="Nature"></div>
+            <div class="gallery-item"><img src="images/portrait.jpeg" alt="Portrait"></div>
+            <div class="gallery-item"><img src="images/structure 1.jpeg" alt="Structure 1"></div>
+            <div class="gallery-item"><img src="images/structure 2.jpeg" alt="Structure 2"></div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="about-content">
-            <h2>About Me</h2>
-            <p>I'm a passionate photographer dedicated to capturing the beauty of the world around us. Through my lens, I seek to tell stories and evoke emotions that resonate with viewers.</p>
-            <p>My journey in photography began several years ago, and since then, I've been exploring various styles and techniques to create compelling visual narratives.</p>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Get In Touch</h2>
-        <div class="contact-content">
-            <p>Interested in working together or have questions about my work?</p>
-            <div class="contact-info">
-                <a href="mailto:your.email@example.com" class="contact-btn">Email Me</a>
-                <div class="social-links">
-                    <a href="#" target="_blank" aria-label="Instagram">Instagram</a>
-                    <a href="#" target="_blank" aria-label="Twitter">Twitter</a>
-                    <a href="#" target="_blank" aria-label="Facebook">Facebook</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Photography Portfolio. All rights reserved.</p>
-    </footer>
+    <!-- About/Contact/Footer removed per request -->
 
     <!-- Lightbox Modal -->
-    <div id="lightbox" class="lightbox">
-        <span class="close">&times;</span>
-        <img class="lightbox-content" id="lightbox-img">
-        <div class="lightbox-caption"></div>
-        <a class="prev">&#10094;</a>
-        <a class="next">&#10095;</a>
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+        <button class="close" aria-label="Close">&times;</button>
+        <button class="prev" aria-label="Previous">
+            <!-- left arrow SVG -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" fill="#fff"/>
+            </svg>
+        </button>
+        <img class="lightbox-content" id="lightbox-img" alt="Expanded photo">
+        <button class="next" aria-label="Next">
+            <!-- right arrow SVG -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" fill="#fff"/>
+            </svg>
+        </button>
+        <div class="lightbox-caption" aria-live="polite"></div>
     </div>
 
     <script src="script.js"></script>
